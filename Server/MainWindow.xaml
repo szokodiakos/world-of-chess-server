@@ -1,0 +1,21 @@
+﻿<Window x:Class="Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="World of Chess game server" Height="350" Width="525">
+    <Grid>
+        <Button Content="Start server" Margin="10,0,0,10" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" Name="startSwitch" Click="startSwitch_Click"/>
+        <Button Content="Clear log" Margin="0,0,10,10" HorizontalAlignment="Right" Width="75" Height="22" VerticalAlignment="Bottom" Name="clearLog" Click="clearLog_Click"/>
+        <TextBox x:Name="console"
+                     VerticalScrollBarVisibility="Auto" 
+                     HorizontalScrollBarVisibility="Auto" 
+                     IsReadOnly="True" Margin="10,10,10,37"
+                     FontFamily="Consolas">
+            <TextBox.Background>
+                <SolidColorBrush Color="Black" Opacity="0.7"></SolidColorBrush>
+            </TextBox.Background>
+            <TextBox.Foreground>
+                <SolidColorBrush Color="White"></SolidColorBrush>
+            </TextBox.Foreground>
+        </TextBox>
+    </Grid>
+</Window>
